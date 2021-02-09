@@ -13,7 +13,7 @@ class Example:
         if raise_error:
             raise RuntimeError()
         return self.message
-    
+
     def get_message(self):
         """Docstring for method"""
         return self.message
