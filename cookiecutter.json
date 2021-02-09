@@ -3,6 +3,6 @@
     "package_name" : "package name for import",
     "package_desc" : "package description",
     "repo_owner": "First Last",
-    "github_username": ""
-    "affiliation": ""
+    "github_username": "",
+    "affiliation": "",
 }
