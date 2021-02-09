@@ -1,13 +1,17 @@
 from setuptools import setup
 
-import {{cookiecutter.package_name}}
+try:
+    import {{cookiecutter.package_name}}
+    version = {{cookiecutter.package_name}}.__version__,
+except ImportError:
+    version = "v0"  
 
 setup(
     name="{{cookiecutter.package_name}}",
-    version={{cookiecutter.package_name}}.__version__,
+    version=version,
     author="",
     author_email="",
-    url = "https://github.com/KIPAC/{{cookiecutter.repo_name}}"
+    url = "https://github.com/KIPAC/{{cookiecutter.repo_name}}",
     packages=["{{cookiecutter.package_name}}"],
     description="={{cookiecutter.package_desc}}",
     long_description=open("README.md").read(),
