@@ -16,7 +16,7 @@ class ExampleTestCase(unittest.TestCase):
         self.assertEqual(foo.run(), self.message)
 
     def test_failure(self):
-        self.assertRaises(TypeError, {{cookiecutter.package_name}}.{{cookiecutter.repo_name}})
+        self.assertRaises(AttributeError, {{cookiecutter.package_name}}.{{cookiecutter.repo_name}})
         foo = {{cookiecutter.package_name}}.Example(self.message)
         self.assertRaises(RuntimeError, foo.run, True)
 
