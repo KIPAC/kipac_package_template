@@ -1,0 +1,10 @@
+# .coveragerc to control coverage.py
+[run]
+omit=
+  *{{cookiecutter.package_name}}/_version.py
+  *{{cookiecutter.package_name}}/version.py
+
+
+[html]
+directory = htmlcov
+
