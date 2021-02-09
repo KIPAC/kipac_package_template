@@ -12,6 +12,7 @@ setup(
     author="",
     author_email="",
     url = "https://github.com/KIPAC/{{cookiecutter.repo_name}}",
+    package_dir={"":"python"},
     packages=["{{cookiecutter.package_name}}"],
     description="={{cookiecutter.package_desc}}",
     long_description=open("README.md").read(),
