@@ -1,14 +1,10 @@
 from setuptools import setup
 
-try:
-    import {{cookiecutter.package_name}}
-    version = {{cookiecutter.package_name}}.__version__,
-except ImportError:
-    version = "v0"  
+from python.bolo import version
 
 setup(
     name="{{cookiecutter.package_name}}",
-    version=version,
+    version=version.get_git_version(),
     author="",
     author_email="",
     url = "https://github.com/KIPAC/{{cookiecutter.repo_name}}",
